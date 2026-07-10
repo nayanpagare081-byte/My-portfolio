@@ -19,13 +19,18 @@ export default function AdminEducation() {
       dateRange: '',
       institution: '',
       degree: '',
-      description: ''
+      score: '',
+      description: '',
+      skills: ''
     });
   };
 
   const handleEdit = (item) => {
     setEditingId(item.id);
-    setForm({ ...item });
+    setForm({ 
+      ...item, 
+      skills: Array.isArray(item.skills) ? item.skills.join(', ') : (item.skills || '')
+    });
   };
 
   const handleDelete = (id) => {
@@ -43,11 +48,16 @@ export default function AdminEducation() {
       return;
     }
     
+    const itemToSave = {
+      ...form,
+      skills: form.skills ? form.skills.split(',').map(s => s.trim()).filter(s => s) : []
+    };
+
     let updated;
     if (editingId === 'new') {
-      updated = [...education, form];
+      updated = [...education, itemToSave];
     } else {
-      updated = education.map(i => i.id === editingId ? form : i);
+      updated = education.map(i => i.id === editingId ? itemToSave : i);
     }
     
     saveData({ education: updated }).then(success => {
@@ -104,14 +114,25 @@ export default function AdminEducation() {
             </div>
           </div>
           
-          <div className="admin-form-group">
-            <label>Date Range</label>
-            <input value={form.dateRange} onChange={e => setForm({...form, dateRange: e.target.value})} placeholder="e.g. 2021 - 2025" />
+          <div className="admin-form-row">
+            <div className="admin-form-group">
+              <label>Date Range</label>
+              <input value={form.dateRange} onChange={e => setForm({...form, dateRange: e.target.value})} placeholder="e.g. 2021 - 2025" />
+            </div>
+            <div className="admin-form-group">
+              <label>Grade / Score (Optional)</label>
+              <input value={form.score || ''} onChange={e => setForm({...form, score: e.target.value})} placeholder="e.g. 9.5 CGPA, 95%" />
+            </div>
           </div>
           
           <div className="admin-form-group">
-            <label>Description / Additional Info</label>
-            <textarea value={form.description} onChange={e => setForm({...form, description: e.target.value})} placeholder="e.g. Relevant Coursework, GPA..." />
+            <label>Description / Additional Info (Use Enter for new paragraphs)</label>
+            <textarea value={form.description} onChange={e => setForm({...form, description: e.target.value})} placeholder="e.g. Relevant Coursework, GPA..." rows="4" />
+          </div>
+
+          <div className="admin-form-group">
+            <label>Skills / Keywords (Comma separated)</label>
+            <input value={form.skills || ''} onChange={e => setForm({...form, skills: e.target.value})} placeholder="e.g. Machine Learning, React, Python" />
           </div>
 
           <div className="admin-actions">

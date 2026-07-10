@@ -45,18 +45,29 @@ export default function Education({ data }) {
                 <div className="hidden lg:block absolute left-[33.33%] top-2 w-4 h-4 bg-primary-green rounded-full transform -translate-x-[7px]"></div>
                 
                 <div className="lg:col-span-4 text-left lg:text-right lg:pr-12">
-                  <p className="text-primary-white text-base font-medium mb-2">{item.period}</p>
+                  <p className="text-primary-white text-base font-bold mb-2">{item.dateRange}</p>
                   <h3 className="text-xl font-bold text-primary-white mb-2">{item.institution}</h3>
                 </div>
                 
                 <div className="lg:col-span-8 lg:pl-8">
-                  <h2 className="text-2xl font-bold text-primary-white mb-2">{item.degree}</h2>
-                  <p className="text-[#a0a0a0] text-sm mb-4">Grade: {item.score}</p>
-                  <div className="space-y-3">
-                    <p className="text-[#a0a0a0] text-base leading-relaxed text-justify">
-                      {item.description}
-                    </p>
+                  <h2 className="text-2xl font-bold text-primary-white mb-4">{item.degree}</h2>
+                  {item.score && <p className="text-[#a0a0a0] text-sm mb-4">Grade: {item.score}</p>}
+                  <div className="space-y-4 mb-6">
+                    {item.description?.split('\n').map((para, i) => (
+                      <p key={i} className="text-[#a0a0a0] text-base leading-relaxed text-justify">
+                        {para}
+                      </p>
+                    ))}
                   </div>
+                  {item.skills && item.skills.length > 0 && (
+                    <div className="flex flex-wrap gap-3">
+                      {item.skills.map((skill, i) => (
+                        <span key={i} className="px-4 py-1.5 rounded-full border border-primary-green/30 text-primary-green text-sm font-medium hover:bg-primary-green/10 transition-colors cursor-default">
+                          {skill.trim()}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}

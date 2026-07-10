@@ -10,9 +10,9 @@ const navItems = [
   { label: 'Projects', href: '/admin/projects', icon: '💻' },
   { label: 'Experience', href: '/admin/experience', icon: '💼' },
   { label: 'Skills', href: '/admin/skills', icon: '⚡' },
-  { label: 'Achievements', href: '/admin/achievements', icon: '🏆' },
   { label: 'Education', href: '/admin/education', icon: '🎓' },
   { label: 'Certifications', href: '/admin/certifications', icon: '📜' },
+  { label: 'Events', href: '/admin/events', icon: '🎟️' },
   { label: 'Contact', href: '/admin/contact', icon: '📬' },
   { label: 'Messages', href: '/admin/messages', icon: '💬' },
 ];

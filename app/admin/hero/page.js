@@ -7,7 +7,7 @@ export default function AdminHero() {
   const [form, setForm] = useState({});
   const [uploading, setUploading] = useState(false);
 
-  const handleFileUpload = async (e) => {
+  const handleFileUpload = async (e, field) => {
     const file = e.target.files[0];
     if (!file) return;
 
@@ -22,7 +22,7 @@ export default function AdminHero() {
       });
       const result = await res.json();
       if (result.url) {
-        setForm({ ...form, photoUrl: result.url });
+        setForm(prev => ({ ...prev, [field]: result.url }));
       } else {
         alert(result.error || 'Upload failed');
       }
@@ -77,8 +77,18 @@ export default function AdminHero() {
           <input value={form.marqueeText || ''} onChange={(e) => setForm({ ...form, marqueeText: e.target.value })} />
         </div>
         <div className="admin-form-group">
-          <label>Resume URL</label>
-          <input value={form.resumeUrl || ''} onChange={(e) => setForm({ ...form, resumeUrl: e.target.value })} />
+          <label>Resume URL (Upload or Link)</label>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <input 
+              style={{ flex: 1 }}
+              value={form.resumeUrl || ''} 
+              onChange={(e) => setForm({ ...form, resumeUrl: e.target.value })} 
+            />
+            <label className="admin-btn-save" style={{ cursor: 'pointer', opacity: uploading ? 0.7 : 1, color: '#000' }}>
+              {uploading ? 'Uploading...' : 'Upload File'}
+              <input type="file" accept="application/pdf" onChange={(e) => handleFileUpload(e, 'resumeUrl')} style={{ display: 'none' }} disabled={uploading} />
+            </label>
+          </div>
         </div>
         <div className="admin-form-group">
           <label>Photo URL (or Upload)</label>
@@ -90,7 +100,7 @@ export default function AdminHero() {
             />
             <label className="admin-btn-save" style={{ cursor: 'pointer', opacity: uploading ? 0.7 : 1, color: '#000' }}>
               {uploading ? 'Uploading...' : 'Upload File'}
-              <input type="file" accept="image/*,video/*" onChange={handleFileUpload} style={{ display: 'none' }} disabled={uploading} />
+              <input type="file" accept="image/*,video/*" onChange={(e) => handleFileUpload(e, 'photoUrl')} style={{ display: 'none' }} disabled={uploading} />
             </label>
           </div>
         </div>

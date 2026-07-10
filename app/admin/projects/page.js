@@ -9,7 +9,7 @@ export default function AdminProjects() {
   const [form, setForm] = useState(null);
   const [uploading, setUploading] = useState(false);
 
-  const handleFileUpload = async (e) => {
+  const handleFileUpload = async (e, field) => {
     const file = e.target.files[0];
     if (!file) return;
 
@@ -24,7 +24,7 @@ export default function AdminProjects() {
       });
       const result = await res.json();
       if (result.url) {
-        setForm({ ...form, imageUrl: result.url });
+        setForm(prev => ({ ...prev, [field]: result.url }));
       } else {
         alert(result.error || 'Upload failed');
       }
@@ -166,7 +166,7 @@ export default function AdminProjects() {
                 />
                 <label className="admin-btn-save" style={{ cursor: 'pointer', opacity: uploading ? 0.7 : 1, color: '#000' }}>
                   {uploading ? 'Uploading...' : 'Upload File'}
-                  <input type="file" accept="image/*,video/*" onChange={handleFileUpload} style={{ display: 'none' }} disabled={uploading} />
+                  <input type="file" accept="image/*,video/*" onChange={(e) => handleFileUpload(e, 'imageUrl')} style={{ display: 'none' }} disabled={uploading} />
                 </label>
               </div>
             </div>
@@ -174,12 +174,32 @@ export default function AdminProjects() {
 
           <div className="admin-form-row">
             <div className="admin-form-group">
-              <label>GitHub URL</label>
-              <input value={form.githubUrl || ''} onChange={e => setForm({...form, githubUrl: e.target.value})} />
+              <label>GitHub URL (or Upload)</label>
+              <div style={{ display: 'flex', gap: '10px' }}>
+                <input 
+                  style={{ flex: 1 }}
+                  value={form.githubUrl || ''} 
+                  onChange={e => setForm({...form, githubUrl: e.target.value})} 
+                />
+                <label className="admin-btn-save" style={{ cursor: 'pointer', opacity: uploading ? 0.7 : 1, color: '#000' }}>
+                  {uploading ? 'Uploading...' : 'Upload File'}
+                  <input type="file" onChange={(e) => handleFileUpload(e, 'githubUrl')} style={{ display: 'none' }} disabled={uploading} />
+                </label>
+              </div>
             </div>
             <div className="admin-form-group">
-              <label>Live Demo URL</label>
-              <input value={form.liveUrl || ''} onChange={e => setForm({...form, liveUrl: e.target.value})} />
+              <label>Live Demo URL (or Upload)</label>
+              <div style={{ display: 'flex', gap: '10px' }}>
+                <input 
+                  style={{ flex: 1 }}
+                  value={form.liveUrl || ''} 
+                  onChange={e => setForm({...form, liveUrl: e.target.value})} 
+                />
+                <label className="admin-btn-save" style={{ cursor: 'pointer', opacity: uploading ? 0.7 : 1, color: '#000' }}>
+                  {uploading ? 'Uploading...' : 'Upload File'}
+                  <input type="file" onChange={(e) => handleFileUpload(e, 'liveUrl')} style={{ display: 'none' }} disabled={uploading} />
+                </label>
+              </div>
             </div>
           </div>
 

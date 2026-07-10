@@ -17,15 +17,15 @@ export default function Certifications({ data }) {
             viewport={{ once: true }}
             className="text-primary-green text-base xl:text-lg font-medium"
           >
-            Certifications
+            Courses & Certifications
           </motion.h1>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-primary-white text-2xl md:text-4xl lg:text-5xl font-semibold py-2"
+            className="text-primary-white text-2xl md:text-4xl lg:text-5xl font-semibold py-2 max-w-3xl leading-tight mx-auto"
           >
-            Licenses & Certifications
+            Continuous Learning & Professional Development
           </motion.h2>
         </div>
 

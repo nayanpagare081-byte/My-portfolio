@@ -7,6 +7,33 @@ export default function AdminCertifications() {
   const [certifications, setCertifications] = useState([]);
   const [editingId, setEditingId] = useState(null);
   const [form, setForm] = useState(null);
+  const [uploading, setUploading] = useState(false);
+
+  const handleFileUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    setUploading(true);
+    const formData = new FormData();
+    formData.append('file', file);
+
+    try {
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData,
+      });
+      const result = await res.json();
+      if (result.url) {
+        setForm({ ...form, credentialUrl: result.url });
+      } else {
+        alert(result.error || 'Upload failed');
+      }
+    } catch (err) {
+      alert('Upload failed');
+    } finally {
+      setUploading(false);
+    }
+  };
 
   useEffect(() => {
     if (data?.certifications) setCertifications(data.certifications);
@@ -18,7 +45,8 @@ export default function AdminCertifications() {
       id: Date.now().toString(),
       title: '',
       issuer: '',
-      category: ''
+      category: '',
+      credentialUrl: ''
     });
   };
 
@@ -108,6 +136,22 @@ export default function AdminCertifications() {
             <div className="admin-form-group">
               <label>Category Tag</label>
               <input value={form.category} onChange={e => setForm({...form, category: e.target.value})} placeholder="e.g. Cloud Computing" />
+            </div>
+          </div>
+          
+          <div className="admin-form-group">
+            <label>Certificate File (Upload or Link)</label>
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <input 
+                style={{ flex: 1 }}
+                value={form.credentialUrl || ''} 
+                onChange={e => setForm({...form, credentialUrl: e.target.value})} 
+                placeholder="https://... or click Upload" 
+              />
+              <label className="admin-btn-save" style={{ cursor: 'pointer', opacity: uploading ? 0.7 : 1, color: '#000' }}>
+                {uploading ? 'Uploading...' : 'Upload File'}
+                <input type="file" accept="image/*,application/pdf" onChange={handleFileUpload} style={{ display: 'none' }} disabled={uploading} />
+              </label>
             </div>
           </div>
 

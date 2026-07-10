@@ -257,24 +257,87 @@
   "education": [
     {
       "id": "1",
-      "dateRange": "2023 - 2027",
-      "institution": "Engineering College",
-      "degree": "B.Tech - Computer Science",
-      "description": "Focus on software engineering, data structures, algorithms, and web technologies."
+      "dateRange": "2025 - 2029",
+      "institution": "Lovely Professional University",
+      "degree": "B.Tech - CSE In (Ai/Ml)",
+      "description": "My academic focus includes software development, machine learning, data science, deep learning, and AI-driven applications",
+      "skills": []
     },
     {
       "id": "2",
-      "dateRange": "2021 - 2023",
-      "institution": "Junior College",
-      "degree": "Intermediate - Science",
-      "description": "Mathematics, Physics, and Chemistry with focus on problem-solving."
+      "dateRange": "2023 - 2025",
+      "institution": "Matoshri College of Engineering",
+      "degree": "intermediate Education ",
+      "description": "Completed intermediate education under HSC board and developed focus on Mathematics, Physics, and Chemistry\nBuilt strong foundation in analytical thinking and problem-solving\nDeveloped interest in technology and computational sciences"
     },
     {
       "id": "3",
-      "dateRange": "2011 - 2021",
-      "institution": "High School",
+      "dateRange": "2014 - 2023",
+      "institution": "A. P. Patel High School",
       "degree": "Secondary Education",
-      "description": "Foundation in sciences and mathematics."
+      "description": "Completed primary and secondary education under SSC board \nDeveloped strong academic foundation and interest in science and technology\nParticipated in various academic and co-curricular activities"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "title": "Agentic AI Day",
+      "organization": "Google",
+      "category": "Hackathon"
+    },
+    {
+      "id": "2",
+      "title": "Artificial Intelligence Workshop",
+      "organization": "IIT Kanpur",
+      "category": "Workshop"
+    },
+    {
+      "id": "3",
+      "title": "Boeing BUILD 3.0",
+      "organization": "Boeing",
+      "category": "Startup Grant"
+    },
+    {
+      "id": "4",
+      "title": "Build for India Hackathon",
+      "organization": "Swecha Telangana",
+      "category": "Hackathon"
+    },
+    {
+      "id": "5",
+      "title": "CMR Hackfest 1.0",
+      "organization": "CMR",
+      "category": "Hackathon"
+    },
+    {
+      "id": "6",
+      "title": "Codenovate",
+      "organization": "KMIT, Hyderabad",
+      "category": "Hackathon"
+    },
+    {
+      "id": "7",
+      "title": "DevDays Hyderabad Agentic & Gen AI Edition",
+      "organization": "Swecha Telangana",
+      "category": "Conference"
+    },
+    {
+      "id": "8",
+      "title": "Empowering Future Leaders on Internet Governance Workshop",
+      "organization": "CDAC",
+      "category": "Workshop"
+    },
+    {
+      "id": "9",
+      "title": "GEENOVATE 2K24",
+      "organization": "Geethanjali College of Engineering and Technology",
+      "category": "Hackathon"
+    },
+    {
+      "id": "10",
+      "title": "GEENOVATE 2K25",
+      "organization": "Geethanjali College of Engineering and Technology",
+      "category": "Hackathon"
     }
   ],
   "certifications": [

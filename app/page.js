@@ -7,9 +7,9 @@ import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
-import Achievements from '@/components/Achievements';
 import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
+import Events from '@/components/Events';
 import Contact from '@/components/Contact';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -37,9 +37,9 @@ export default async function Home() {
       <Skills data={data.skills} />
       <Experience data={data.experience} />
       <Projects data={data.projects} />
-      <Achievements data={data.achievements} />
       <Education data={data.education} />
       <Certifications data={data.certifications} />
+      <Events data={data.events} />
       <Contact data={data.contact} />
       <Footer data={data.hero} />
     </main>
