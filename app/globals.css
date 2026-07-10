@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "tailwindcss/theme.css";
+
+@theme {
+  --color-primary-green: #3ccf91;
+  --color-primary-white: #ffffff;
+  --animate-marquee: marquee 50s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 50s linear infinite;
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-white;
+  }
+}
+
+.jelly-blob {
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.cursor-can-hover:hover ~ .jelly-blob {
+  width: 80px !important;
+  height: 80px !important;
+}
