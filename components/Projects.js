@@ -7,7 +7,7 @@ export default function Projects({ data }) {
   if (!projects || projects.length === 0) return null;
 
   return (
-    <div id="projects" className="div-container bg-[#0a0a0a] w-full px-3 lg:px-0">
+    <div id="project" className="div-container bg-[#0a0a0a] w-full px-3 lg:px-0">
       <div className="md:max-w-screen-lg xl:max-w-screen-xl mx-auto px-3">
         <div className="h-full w-full flex flex-col md:mt-12 mt-10 lg:mt-12 lg:px-0 md:px-0 px-3">
           

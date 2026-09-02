@@ -54,7 +54,7 @@ export default function Hero({ data, email }) {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex flex-wrap gap-4 xl:gap-x-6 lg:justify-start justify-center items-center mt-8 z-10"
             >
-              <a href="#projects" className="border text-lg font-semibold hover:bg-primary-white hover:text-black transition-all ease-in-out duration-300 border-[#a0a0a0]/30 rounded-xl py-3 px-8 text-primary-white bg-transparent">
+              <a href="#project" className="border text-lg font-semibold hover:bg-primary-white hover:text-black transition-all ease-in-out duration-300 border-[#a0a0a0]/30 rounded-xl py-3 px-8 text-primary-white bg-transparent">
                 See Work
               </a>
               <a href="/resume.pdf" download>

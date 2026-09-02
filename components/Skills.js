@@ -48,7 +48,7 @@ export default function Skills({ data }) {
   const allSkills = categories.flatMap(cat => cat.skills.map(s => s.name));
 
   return (
-    <div id="skills" className="div-container bg-[#0a0a0a] w-full px-3 lg:px-0 py-20 relative overflow-hidden">
+    <div id="skill" className="div-container bg-[#0a0a0a] w-full px-3 lg:px-0 py-20 relative overflow-hidden">
       
       {/* Background Marquee */}
       <div className="absolute top-0 w-full overflow-hidden whitespace-nowrap pointer-events-none select-none flex z-0">

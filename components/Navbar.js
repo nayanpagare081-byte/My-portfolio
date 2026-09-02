@@ -46,14 +46,14 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden lg:block">
           <nav className="space-x-8 flex justify-between gap-x-6 text-white">
-            {['Home', 'About', 'Projects', 'Experience', 'Skills', 'Activities', 'Contact'].map((item, index) => (
+            {['Home', 'About', 'Skill', 'Experience', 'Project', 'Education', 'Contact'].map((item, index) => (
               <motion.div
                 key={item}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
               >
-                <a href={`#${item === 'Activities' ? 'achievements' : item.toLowerCase()}`}>
+                <a href={`#${item.toLowerCase()}`}>
                   <div className="text-[14px] font-[600] uppercase text-white tracking-wider">
                     <AnimatedText text={item} />
                   </div>
@@ -88,10 +88,10 @@ export default function Navbar() {
           transition={{ duration: 0.3 }}
           className="fixed inset-0 bg-[#0a0a0a] z-40 flex flex-col justify-center items-start pl-8 space-y-8 h-screen w-full"
         >
-          {['Home', 'About', 'Projects', 'Experience', 'Skills', 'Activities', 'Contact'].map((item) => (
+          {['Home', 'About', 'Skill', 'Experience', 'Project', 'Education', 'Contact'].map((item) => (
             <a 
               key={item}
-              href={`#${item === 'Activities' ? 'achievements' : item.toLowerCase()}`}
+              href={`#${item.toLowerCase()}`}
               onClick={() => setMobileMenuOpen(false)}
               className="text-white text-4xl font-extrabold uppercase tracking-wide hover:text-primary-green transition-colors"
             >
