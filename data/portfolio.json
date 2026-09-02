@@ -76,42 +76,15 @@
     "professional": [
       {
         "id": "1",
-        "dateRange": "2025 - Present",
-        "organization": "Tech Company",
-        "location": "India",
-        "role": "Software Development Intern",
-        "responsibilities": [
-          "Developed and maintained web applications using React and Node.js",
-          "Collaborated with cross-functional teams to deliver features on time",
-          "Implemented RESTful APIs and database integrations"
-        ],
-        "skills": [
-          "React",
-          "Node.js",
-          "MongoDB",
-          "Git"
-        ]
+        "dateRange": "",
+        "organization": "",
+        "location": "",
+        "role": "",
+        "responsibilities": [],
+        "skills": []
       }
     ],
-    "college": [
-      {
-        "id": "1",
-        "dateRange": "2023 - Present",
-        "organization": "College Tech Club",
-        "location": "India",
-        "role": "Technical Lead",
-        "responsibilities": [
-          "Led a team of developers in building web applications",
-          "Organized coding workshops and hackathons",
-          "Mentored junior developers in modern web technologies"
-        ],
-        "skills": [
-          "Leadership",
-          "Web Development",
-          "Event Management"
-        ]
-      }
-    ]
+    "college": []
   },
   "skills": {
     "categories": [
@@ -281,83 +254,17 @@
   "events": [
     {
       "id": "1",
-      "title": "Agentic AI Day",
-      "organization": "Google",
-      "category": "Hackathon"
-    },
-    {
-      "id": "2",
-      "title": "Artificial Intelligence Workshop",
-      "organization": "IIT Kanpur",
-      "category": "Workshop"
-    },
-    {
-      "id": "3",
-      "title": "Boeing BUILD 3.0",
-      "organization": "Boeing",
-      "category": "Startup Grant"
-    },
-    {
-      "id": "4",
-      "title": "Build for India Hackathon",
-      "organization": "Swecha Telangana",
-      "category": "Hackathon"
-    },
-    {
-      "id": "5",
-      "title": "CMR Hackfest 1.0",
-      "organization": "CMR",
-      "category": "Hackathon"
-    },
-    {
-      "id": "6",
-      "title": "Codenovate",
-      "organization": "KMIT, Hyderabad",
-      "category": "Hackathon"
-    },
-    {
-      "id": "7",
-      "title": "DevDays Hyderabad Agentic & Gen AI Edition",
-      "organization": "Swecha Telangana",
-      "category": "Conference"
-    },
-    {
-      "id": "8",
-      "title": "Empowering Future Leaders on Internet Governance Workshop",
-      "organization": "CDAC",
-      "category": "Workshop"
-    },
-    {
-      "id": "9",
-      "title": "GEENOVATE 2K24",
-      "organization": "Geethanjali College of Engineering and Technology",
-      "category": "Hackathon"
-    },
-    {
-      "id": "10",
-      "title": "GEENOVATE 2K25",
-      "organization": "Geethanjali College of Engineering and Technology",
-      "category": "Hackathon"
+      "title": "",
+      "organization": "",
+      "category": ""
     }
   ],
   "certifications": [
     {
       "id": "1",
-      "title": "Full Stack Web Development",
-      "issuer": "Online Platform",
-      "category": "Web Development"
-    },
-    {
-      "id": "2",
-      "title": "Data Structures & Algorithms",
-      "issuer": "Online Platform",
-      "category": "Computer Science"
-    },
-    {
-      "id": "3",
-      "title": "React Developer Certification",
-      "issuer": "Online Platform",
-      "category": "Frontend"
+      "title": "",
+      "issuer": "",
+      "category": ""
     }
   ],
   "contact": {
