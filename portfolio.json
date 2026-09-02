@@ -1,0 +1,282 @@
+{
+  "hero": {
+    "badge": "Open to work",
+    "greeting": "Hi There,",
+    "name": "Nayan Pagare",
+    "role": "AI/ML Engineer",
+    "photoUrl": "/uploads/1783665337836-ChatGPT-Image-Jul-9,-2026,-02_44_41-PM.png",
+    "bio": "AI/ML enthusiast passionate about building impactful, real-world solutions using Artificial Intelligence and emerging technologies.",
+    "marqueeText": "AI/ML Engineer & Innovator",
+    "resumeUrl": "/resume.pdf",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/nayan-pagare-650783371/",
+      "email": "https://mail.google.com/mail/?view=cm&fs=1&to=nayanpagare081@gmail.com",
+      "github": "https://github.com/nayanpagare081-byte"
+    }
+  },
+  "about": {
+    "bio": [
+      "I am an AI/ML enthusiast with hands-on experience in coding competitions and multiple hackathons, where I have strengthened my problem-solving, collaboration, and technical skills. I enjoy tackling complex challenges and continuously expanding my knowledge by exploring emerging technologies and building practical solutions.\n\n\n\nThrough my academic and extracurricular experiences, I have developed leadership, strategic thinking, and execution skills while working in technology-driven environments. My goal is to keep learning, create innovative solutions with real-world impact, and build a meaningful career through dedication, creativity, and persistence.\n",
+      "Driven by curiosity and a passion for learning, I believe in continuous growth, hard work, and maintaining a positive mindset. Beyond technology, I enjoy traveling, conducting research, and spending time on hobbies that broaden my perspective and inspire creativity.",
+      "Through my academic and extracurricular experiences, I have developed leadership, strategic thinking, and execution skills while working in technology-driven environments. My goal is to keep learning, create innovative solutions with real-world impact, and build a meaningful career through dedication, creativity, and persistence.\n"
+    ],
+    "stats": [
+      {
+        "value": "01+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "10+",
+        "label": "Major Projects"
+      },
+      {
+        "value": "1+",
+        "label": "Hackathon Wins"
+      },
+      {
+        "value": "250+",
+        "label": "LinkedIn Followers"
+      },
+      {
+        "value": "200+",
+        "label": "GitHub Contributions"
+      },
+      {
+        "value": "150+",
+        "label": "Coding Problems Solved"
+      }
+    ],
+    "email": "nayanpagare081@gmail.com",
+    "location": "Maharashtra, India",
+    "photoUrl": "/photo2.png"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "E-Commerce Platform",
+      "subtitle": "Full Stack Shopping Experience",
+      "description": "A complete e-commerce solution with product catalog, shopping cart, payment integration, and order management. Built with a focus on performance and user experience.",
+      "features": [
+        "Real-time inventory management",
+        "Secure payment gateway integration",
+        "Responsive design with mobile-first approach"
+      ],
+      "tech": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB"
+      ],
+      "githubUrl": "https://github.com/nayanpagare081-byte",
+      "liveUrl": "https://bpgconstructionandearthmovingequipm.vercel.app/",
+      "imageUrl": "/uploads/1783668364774-Screenshot-2026-07-10-113727.png"
+    }
+  ],
+  "experience": {
+    "professional": [
+      {
+        "id": "1",
+        "dateRange": "",
+        "organization": "",
+        "location": "",
+        "role": "",
+        "responsibilities": [],
+        "skills": []
+      }
+    ],
+    "college": []
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Programming Languages",
+        "skills": [
+          {
+            "name": "JavaScript",
+            "icon": "JS"
+          },
+          {
+            "name": "Python",
+            "icon": "PY"
+          },
+          {
+            "name": "Java",
+            "icon": "JV"
+          },
+          {
+            "name": "C++",
+            "icon": "C+"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "TS"
+          }
+        ]
+      },
+      {
+        "name": "Frontend / Web Technologies",
+        "skills": [
+          {
+            "name": "React",
+            "icon": "RE"
+          },
+          {
+            "name": "Next.js",
+            "icon": "NX"
+          },
+          {
+            "name": "HTML5",
+            "icon": "HT"
+          },
+          {
+            "name": "CSS3",
+            "icon": "CS"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "TW"
+          }
+        ]
+      },
+      {
+        "name": "Backend & APIs",
+        "skills": [
+          {
+            "name": "Node.js",
+            "icon": "ND"
+          },
+          {
+            "name": "Express.js",
+            "icon": "EX"
+          },
+          {
+            "name": "REST APIs",
+            "icon": "AP"
+          },
+          {
+            "name": "GraphQL",
+            "icon": "GQ"
+          }
+        ]
+      },
+      {
+        "name": "Databases",
+        "skills": [
+          {
+            "name": "MongoDB",
+            "icon": "MG"
+          },
+          {
+            "name": "MySQL",
+            "icon": "SQ"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "PG"
+          },
+          {
+            "name": "Firebase",
+            "icon": "FB"
+          }
+        ]
+      },
+      {
+        "name": "Tools & Platforms",
+        "skills": [
+          {
+            "name": "Git",
+            "icon": "GT"
+          },
+          {
+            "name": "GitHub",
+            "icon": "GH"
+          },
+          {
+            "name": "VS Code",
+            "icon": "VS"
+          },
+          {
+            "name": "Vercel",
+            "icon": "VR"
+          },
+          {
+            "name": "Docker",
+            "icon": "DK"
+          }
+        ]
+      }
+    ]
+  },
+  "achievements": [
+    {
+      "id": "1",
+      "title": "Hackathon Winner",
+      "subtitle": "First Place",
+      "description": "Won first place at a national-level hackathon for building an innovative web application."
+    },
+    {
+      "id": "2",
+      "title": "Open Source Contributor",
+      "subtitle": "Active Contributor",
+      "description": "Contributed to multiple open-source projects and received recognition from the community."
+    },
+    {
+      "id": "3",
+      "title": "Coding Competition",
+      "subtitle": "Top 10 Finalist",
+      "description": "Secured a top 10 position in a competitive programming contest with 500+ participants."
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "dateRange": "2025 - 2029",
+      "institution": "Lovely Professional University",
+      "degree": "B.Tech - CSE In (Ai/Ml)",
+      "description": "My academic focus includes software development, machine learning, data science, deep learning, and AI-driven applications",
+      "skills": []
+    },
+    {
+      "id": "2",
+      "dateRange": "2023 - 2025",
+      "institution": "Matoshri College of Engineering",
+      "degree": "intermediate Education ",
+      "description": "Completed intermediate education under HSC board and developed focus on Mathematics, Physics, and Chemistry\nBuilt strong foundation in analytical thinking and problem-solving\nDeveloped interest in technology and computational sciences"
+    },
+    {
+      "id": "3",
+      "dateRange": "2014 - 2023",
+      "institution": "A. P. Patel High School",
+      "degree": "Secondary Education",
+      "description": "Completed primary and secondary education under SSC board \nDeveloped strong academic foundation and interest in science and technology\nParticipated in various academic and co-curricular activities"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "title": "",
+      "organization": "",
+      "category": ""
+    }
+  ],
+  "certifications": [
+    {
+      "id": "1",
+      "title": "",
+      "issuer": "",
+      "category": ""
+    }
+  ],
+  "contact": {
+    "location": "Maharashtra, Nashik, India",
+    "email": "nayanpagare081@gmail.com",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/nayan-pagare-650783371/",
+      "github": "https://github.com/nayanpagare081-byte",
+      "email": "nayanpagare081@gmail.com"
+    }
+  },
+  "admin": {
+    "password": "admin123"
+  }
+}
